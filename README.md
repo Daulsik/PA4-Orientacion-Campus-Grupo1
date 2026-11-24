@@ -27,11 +27,11 @@ DFS (Búsqueda en profundidad)
 
 Situación: encontrar todas las posibles salidas de un laberinto. 
 
-Se comienza desde la entrada. 
+- Se comienza desde la entrada. 
 
-Se avanza por un camino hasta que ya no se pueda continuar. 
+- Se avanza por un camino hasta que ya no se pueda continuar. 
 
-Si se llega a un camino sin salida, se retrocede y se intenta otra ruta. 
+- Si se llega a un camino sin salida, se retrocede y se intenta otra ruta. 
 
 Conviene porque permite explorar diferentes caminos y encontrar posibles soluciones sin necesidad de revisar primero todos los caminos cercanos. 
 
@@ -40,13 +40,13 @@ BFS (Búsqueda en anchura)
 
 Situación: encontrar la ruta con menor cantidad de conexiones entre dos estaciones de una red de transporte. 
 
-Se comienza en la estación de origen. 
+- Se comienza en la estación de origen. 
 
-Se revisan primero todas las estaciones conectadas directamente. 
+- Se revisan primero todas las estaciones conectadas directamente. 
 
-Después se revisan las estaciones que están a dos conexiones. 
+- Después se revisan las estaciones que están a dos conexiones. 
 
-Se continúa hasta llegar al destino.  
+- Se continúa hasta llegar al destino.  
 
 Conviene porque permite encontrar el camino con menor número de aristas cuando todas las conexiones tienen el mismo costo.
 
@@ -56,9 +56,9 @@ El algoritmo A es un método de búsqueda que permite encontrar rutas eficientes
 
 Combina dos valores: 
 
-g(n): el costo real desde el punto de inicio hasta el nodo actual. 
+- g(n): el costo real desde el punto de inicio hasta el nodo actual. 
 
-h(n): el costo estimado desde el nodo actual hasta la meta (heurística). 
+- h(n): el costo estimado desde el nodo actual hasta la meta (heurística). 
 
 Ejemplo:  
 
