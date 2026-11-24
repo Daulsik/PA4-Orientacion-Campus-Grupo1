@@ -1,5 +1,6 @@
 ﻿# PA4-Orientacion-Campus-Grupo1
 Actividad 3 
+
 Modelado del problema mediante grafos 
 Un grafo es una estructura que permite representar las relaciones o conexiones entre diferentes elementos. Está formado por nodos (vértices) y aristas (conexiones).
 
@@ -12,5 +13,5 @@ Sentido de las conexiones: Si las calles permiten circular en ambos sentidos, el
 
 Peso de las aristas: Puede representar la distancia, el tiempo o el costo de trasladarse de un lugar a otro. 
 
-                               <img width="702" height="572" alt="Captura de pantalla 2026-11-23 221444" src="https://github.com/user-attachments/assets/862afc1a-7a32-48f8-b663-1ac9e67a82fb" />
+                               
 
