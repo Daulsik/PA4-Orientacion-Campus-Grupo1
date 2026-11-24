@@ -14,5 +14,7 @@ Sentido de las conexiones: Si las calles permiten circular en ambos sentidos, el
 
 Peso de las aristas: Puede representar la distancia, el tiempo o el costo de trasladarse de un lugar a otro. 
 
-                               
+     
+    
+                   
 
