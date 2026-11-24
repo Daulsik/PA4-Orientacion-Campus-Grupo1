@@ -5,6 +5,7 @@ Modelado del problema mediante grafos
 Un grafo es una estructura que permite representar las relaciones o conexiones entre diferentes elementos. Está formado por nodos (vértices) y aristas (conexiones).
 
 Representación del problema mediante un grafo 
+
 Nodos: Representan los lugares por donde puede pasar la persona, como la casa, el parque, el hospital, la biblioteca y la universidad. 
 
 Aristas: Representan las calles o caminos que conectan esos lugares. 
