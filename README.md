@@ -18,6 +18,7 @@ Representación del problema mediante un grafo
  Grafo:
 
 <img width="702" height="572" alt="Captura de pantalla 2026-11-23 221444" src="https://github.com/user-attachments/assets/775b8cbb-d0fe-44d6-80b3-b47ce4f6d940" />
+Por ejemplo, los nodos serían A (casa), B (parque), C (hospital), D (biblioteca) y E (universidad). Las conexiones representarían los caminos disponibles entre ellos.
 
                                                       
                                                                                              
