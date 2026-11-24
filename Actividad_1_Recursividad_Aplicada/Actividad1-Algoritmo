@@ -1,0 +1,142 @@
+package pe.edu.isil;
+
+import java.util.*;
+
+public class Main {
+
+    private static Map<String, List<Conexion>> campus = new HashMap<>();
+
+    static class Conexion {
+        String destino;
+        double distancia;
+
+        public Conexion(String destino, double distancia) {
+            this.destino = destino;
+            this.distancia = distancia;
+        }
+    }
+
+    private static void agregarConexion(String origen, String destino, double distancia) {
+        campus.putIfAbsent(origen, new ArrayList<>());
+        campus.putIfAbsent(destino, new ArrayList<>());
+
+        campus.get(origen).add(new Conexion(destino, distancia));
+        campus.get(destino).add(new Conexion(origen, distancia));
+    }
+
+    private static void inicializarCampus() {
+        agregarConexion("Entrada principal", "Biblioteca", 300);
+        agregarConexion("Entrada principal", "Cafeteria", 120);
+        agregarConexion("Biblioteca", "Laboratorio", 180);
+        agregarConexion("Cafeteria", "Aula", 100);
+        agregarConexion("Laboratorio", "Aula", 80);
+
+        campus.put("Gimnasio", new ArrayList<>());
+    }
+
+    private static void buscarRutas(String actual, String destino,
+                                    Set<String> visitados,
+                                    List<String> rutaActual,
+                                    double distanciaActual,
+                                    List<String> mejorRuta,
+                                    double[] mejorDistancia) {
+
+        visitados.add(actual);
+        rutaActual.add(actual);
+
+        if (actual.equalsIgnoreCase(destino)) {
+
+            if (distanciaActual < mejorDistancia[0]) {
+                mejorDistancia[0] = distanciaActual;
+                mejorRuta.clear();
+                mejorRuta.addAll(rutaActual);
+            }
+
+        } else {
+
+            for (Conexion conexion : campus.get(actual)) {
+
+                if (!visitados.contains(conexion.destino)) {
+
+                    buscarRutas(
+                            conexion.destino,
+                            destino,
+                            visitados,
+                            rutaActual,
+                            distanciaActual + conexion.distancia,
+                            mejorRuta,
+                            mejorDistancia
+                    );
+                }
+            }
+        }
+
+        rutaActual.remove(rutaActual.size() - 1);
+        visitados.remove(actual);
+    }
+
+    public static void main(String[] args) {
+        inicializarCampus();
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("==================================");
+        System.out.println("   SISTEMA DE ORIENTACION CAMPUS");
+        System.out.println("==================================");
+
+        System.out.println("\nUbicaciones disponibles:");
+
+        for (String ubicacion : campus.keySet()) {
+            System.out.println("- " + ubicacion);
+        }
+
+        System.out.print("\nIngrese la ubicacion de origen: ");
+        String origen = scanner.nextLine();
+
+        System.out.print("Ingrese la ubicacion de destino: ");
+        String destino = scanner.nextLine();
+
+        if (!campus.containsKey(origen) || !campus.containsKey(destino)) {
+
+            System.out.println("\nUna de las ubicaciones ingresadas no existe.");
+
+        } else {
+
+            Set<String> visitados = new HashSet<>();
+            List<String> rutaActual = new ArrayList<>();
+            List<String> mejorRuta = new ArrayList<>();
+
+            double[] mejorDistancia = {Double.POSITIVE_INFINITY};
+
+            buscarRutas(
+                    origen,
+                    destino,
+                    visitados,
+                    rutaActual,
+                    0,
+                    mejorRuta,
+                    mejorDistancia
+            );
+
+            if (!mejorRuta.isEmpty()) {
+
+                System.out.println("\nExiste una ruta disponible.");
+                System.out.println("Ruta mas conveniente: " +
+                        String.join(" -> ", mejorRuta));
+
+                System.out.println("Distancia total: " +
+                        mejorDistancia[0] + " metros");
+
+                System.out.println("Justificacion: se selecciono el recorrido " +
+                        "con la menor distancia entre las rutas posibles.");
+
+            } else {
+
+                System.out.println("\nNo existe una ruta disponible entre ambas ubicaciones.");
+
+            }
+        }
+
+        scanner.close();
+    }
+}
