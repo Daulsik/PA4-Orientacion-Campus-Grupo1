@@ -1,4 +1,4 @@
-﻿# PA4-Orientacion-Campus-Grupo1
+<img width="702" height="572" alt="Captura de pantalla 2026-11-23 221444" src="https://github.com/user-attachments/assets/775b8cbb-d0fe-44d6-80b3-b47ce4f6d940" />﻿# PA4-Orientacion-Campus-Grupo1
                                                        Actividad 3 
 Modelado del problema mediante grafos 
 
@@ -14,7 +14,10 @@ Representación del problema mediante un grafo
 
 - Peso de las aristas: Puede representar la distancia, el tiempo o el costo de trasladarse de un lugar a otro. 
 
-     
-    
+                                                      
+                                                                                              <img width="702" height="572" alt="Captura de pantalla 2026-11-23 221444" src="https://github.com/user-attachments/assets/8e333cc6-08a5-4b29-9472-6892df127a0b" />
+
+
+
                    
 
