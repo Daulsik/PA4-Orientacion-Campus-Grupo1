@@ -1,4 +1,4 @@
-Comparación técnica de alternativas planteadas
+## Comparación técnica de alternativas planteadas
 Para resolver un módulo inteligente de orientación dentro del campus —que ordena información y analiza rutas posibles entre ubicaciones— es necesario contrastar el rol de las técnicas estudiadas:
 
 - Recursividad y ordenamiento recursivo: La recursividad permite descomponer tareas complejas mediante divide y vencerás, apoyándose en un caso base y llamadas recursivas. En ordenamiento de datos (como Merge Sort), resulta útil para organizar información de forma estructurada y estable, aunque exige cuidar la profundidad de llamadas y la memoria de la pila de ejecución.
@@ -12,7 +12,7 @@ Para resolver un módulo inteligente de orientación dentro del campus —que or
 
 
 
-Relación con aplicaciones básicas de inteligencia artificial
+## Relación con aplicaciones básicas de inteligencia artificial
 
 - Búsqueda de rutas y navegación: Los grafos modelan ubicaciones (nodos) y trayectos (aristas), y algoritmos como $A^*$ son base clásica para encontrar caminos eficientes hacia un destino, principio que se asemeja a la orientación dentro del campus.   
 
