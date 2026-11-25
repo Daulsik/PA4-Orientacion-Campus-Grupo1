@@ -231,7 +231,7 @@ Tomando como ejemplo el arreglo de distancias `arr = {120, 45, 90, 30}`:
 
 ## ¿Por qué el enfoque recursivo es útil en este contexto?
 
-- **Rapidez y eficiencia:** Mantiene un tiempo de respuesta rápido ($O(n \log n)$) incluso si el campus tiene cientos de aulas o laboratorios registrados.
+- **Rapidez y eficiencia:** Mantiene un tiempo de respuesta rápido (O(n log n)) incluso si el campus tiene cientos de aulas o laboratorios registrados.
 - **Ordenamiento estable:** Si dos ambientes del campus están exactamente a la misma distancia, conserva su orden original sin desordenarlos.
 - **Código limpio y modular:** Separa en dos métodos distintos la tarea de dividir (`sort`) y la de unir (`merge`), facilitando su mantenimiento.
 - **Reutilización:** El mismo algoritmo sirve para ordenar los lugares por otros criterios numéricos, como tiempo de caminata o cantidad de asientos disponibles.
