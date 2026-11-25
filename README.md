@@ -240,17 +240,17 @@ Tomando como ejemplo el arreglo de distancias `arr = {120, 45, 90, 30}`:
 
 ```java
 public class MergeSort {
-    // Método principal que llama al ordenamiento recursivo
+    
     public void sort(int[] arr, int left, int right) {
         if (left < right) {
             int mid = (left + right) / 2;
-            sort(arr, left, mid);      // Ordenar primera mitad
-            sort(arr, mid + 1, right); // Ordenar segunda mitad
-            merge(arr, left, mid, right); // Fusionar mitades
+            sort(arr, left, mid);      //  primera mitad
+            sort(arr, mid + 1, right); //  segunda mitad
+            merge(arr, left, mid, right); // fusionar mitades
         }
     }
 
-    // Método para fusionar dos sub-arrays
+    //  fusionar dos sub-arrays
     void merge(int[] arr, int left, int mid, int right) {
         int n1 = mid - left + 1;
         int n2 = right - mid;
