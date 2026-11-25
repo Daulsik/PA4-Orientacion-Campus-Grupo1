@@ -2,14 +2,14 @@
 El equipo propone un módulo inteligente de orientación dentro del campus que integra recursividad, algoritmos recursivos de ordenamiento y teoría de grafos para organizar información y analizar rutas posibles entre ubicaciones. Con ello se busca comparar alternativas de recorrido y búsqueda (como DFS, BFS y $A^*$) y justificar técnicamente la solución más conveniente según el contexto del desplazamiento y su relación con aplicaciones básicas de inteligencia artificial.
  
 # Propuesta del equipo:
-Desarrollar y sustentar una propuesta técnica integral para un módulo inteligente de orientación en el campus mediante la aplicación de recursividad, ordenamiento recursivo y modelado con grafos, comparando estrategias de recorrido y búsqueda, fundamentando la recomendación final del equipo y articulando todo el proceso en un repositorio documentado en GitHub, un informe en PDF y una exposición grupal en video.
+Desarrollar y sustentar una propuesta técnica integral para un módulo inteligente de orientación en el campus mediante la aplicación de recursividad, ordenamiento recursivo y modelado con grafos, comparando estrategias de recorrido y búsqueda, fundamentando la recomendación final del equipo y articulando todo el proceso en un repositorio documentado en GitHub y una exposición grupal en video.
 
 # Integrantes del grupo:
 
 | Integrante                  |                 Actividad                           | Trabajo asignado                                                                                                                                                                                    |
 | :---                        | :---                                                | :---                                                                                                                                                                                                |
 | **Valdo**                   | Actividad 1 — Recursividad aplicada                 | Definición de recursividad y principio *divide y vencerás*, diseño de algoritmo recursivo asociado al caso, y explicación del caso base, caso recursivo y condición de finalización.                |
-| **Sisoy**                   | Actividad 2 — Ordenamiento recursivo                | Planteamiento de algoritmo recursivo de ordenamiento aplicable a datos del caso, descripción paso a paso de la división y obtención del resultado final, y utilidad del enfoque recursivo.          |
+| **?**                       | Actividad 2 — Ordenamiento recursivo                | Planteamiento de algoritmo recursivo de ordenamiento aplicable a datos del caso, descripción paso a paso de la división y obtención del resultado final, y utilidad del enfoque recursivo.          |
 | **Richard Mucho**           | Actividad 3 — Modelado del problema mediante grafos | Representación del problema con un grafo (nodos, aristas y sentido de conexiones), propuesta de situaciones para DFS y BFS, y aporte del algoritmo heurístico $A^*$ en búsquedas orientadas a meta. |
 | **Jose Jossimar Huamancha** | Actividad 4 — Argumentación final                   | Comparación técnica de alternativas planteadas, recomendación de solución para el módulo del campus y relación de la propuesta con aplicaciones básicas de inteligencia artificial.                 |
  
