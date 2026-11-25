@@ -273,8 +273,9 @@ Un GPS que busca la mejor ruta para llegar a un destino. El algoritmo considera 
 
 - Combina el costo del recorrido con una estimación de lo que falta recorrer.
 
+                                                   Actividad 4
 
-## Actividad 4 — Argumentación final
+Argumentación final
 
 - **Comparación técnica:** Contrastamos el enfoque recursivo y de ordenamiento estructurado con los recorridos y búsquedas en grafos (**DFS**, **BFS** y **$A^*$**), evaluando sus alcances y limitaciones para orientar dentro del campus.
 - **Recomendación para el módulo del campus:** Proponemos combinar ordenamiento recursivo para organizar información con una estrategia de búsqueda orientada a la meta (**$A^*$** con heurística admisible o **BFS** según el criterio del grafo) para seleccionar rutas convenientes.
