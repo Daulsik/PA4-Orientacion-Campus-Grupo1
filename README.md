@@ -1,10 +1,10 @@
-Objetivo del trabajo:
+# Objetivo del trabajo:
 El equipo propone un módulo inteligente de orientación dentro del campus que integra recursividad, algoritmos recursivos de ordenamiento y teoría de grafos para organizar información y analizar rutas posibles entre ubicaciones. Con ello se busca comparar alternativas de recorrido y búsqueda (como DFS, BFS y $A^*$) y justificar técnicamente la solución más conveniente según el contexto del desplazamiento y su relación con aplicaciones básicas de inteligencia artificial.
  
-Propuesta del equipo:
+# Propuesta del equipo:
 Desarrollar y sustentar una propuesta técnica integral para un módulo inteligente de orientación en el campus mediante la aplicación de recursividad, ordenamiento recursivo y modelado con grafos, comparando estrategias de recorrido y búsqueda, fundamentando la recomendación final del equipo y articulando todo el proceso en un repositorio documentado en GitHub, un informe en PDF y una exposición grupal en video.
 
- Integrantes del grupo:
+# Integrantes del grupo:
 
 | Integrante                  |                 Actividad                           | Trabajo asignado                                                                                                                                                                                    |
 | :---                        | :---                                                | :---                                                                                                                                                                                                |
@@ -12,13 +12,6 @@ Desarrollar y sustentar una propuesta técnica integral para un módulo intelige
 | **Sisoy**                   | Actividad 2 — Ordenamiento recursivo                | Planteamiento de algoritmo recursivo de ordenamiento aplicable a datos del caso, descripción paso a paso de la división y obtención del resultado final, y utilidad del enfoque recursivo.          |
 | **Richard Mucho**           | Actividad 3 — Modelado del problema mediante grafos | Representación del problema con un grafo (nodos, aristas y sentido de conexiones), propuesta de situaciones para DFS y BFS, y aporte del algoritmo heurístico $A^*$ en búsquedas orientadas a meta. |
 | **Jose Jossimar Huamancha** | Actividad 4 — Argumentación final                   | Comparación técnica de alternativas planteadas, recomendación de solución para el módulo del campus y relación de la propuesta con aplicaciones básicas de inteligencia artificial.                 |
- 
- Organización del trabajo y estructura de archivos:
- 
- 
- 
- 
- 
  
  
  # PA4-Orientacion-Campus-Grupo1
@@ -278,7 +271,17 @@ Un GPS que busca la mejor ruta para llegar a un destino. El algoritmo considera 
 
 - Puede encontrar rutas óptimas si utiliza una heurística admisible y se cumplen las condiciones necesarias. 
 
-- Combina el costo del recorrido con una estimación de lo que falta recorrer. 
+- Combina el costo del recorrido con una estimación de lo que falta recorrer.
+
+
+## Actividad 4 — Argumentación final
+
+- **Comparación técnica:** Contrastamos el enfoque recursivo y de ordenamiento estructurado con los recorridos y búsquedas en grafos (**DFS**, **BFS** y **$A^*$**), evaluando sus alcances y limitaciones para orientar dentro del campus.
+- **Recomendación para el módulo del campus:** Proponemos combinar ordenamiento recursivo para organizar información con una estrategia de búsqueda orientada a la meta (**$A^*$** con heurística admisible o **BFS** según el criterio del grafo) para seleccionar rutas convenientes.
+- **Relación con aplicaciones básicas de IA:** Vinculamos el módulo de orientación con sistemas de navegación/rutas, recomendadores y redes de relaciones basadas en grafos, apoyándonos en el análisis algorítmico y el uso crítico de IA.
+
+# Link del Video: ()
+
 
                    
 
