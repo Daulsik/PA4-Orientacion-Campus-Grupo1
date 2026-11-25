@@ -198,6 +198,7 @@ La finalización de cada recorrido recursivo ocurre cuando se llega a un destino
 rutaActual.remove(rutaActual.size() - 1);
 visitados.remove(actual);
 ```
+                                                       Actividad 2
 
                                                        Actividad 3 
 Modelado del problema mediante grafos 
