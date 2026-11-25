@@ -200,6 +200,97 @@ visitados.remove(actual);
 ```
                                                        Actividad 2
 
+Ordenamiento recursivo 
+
+El ordenamiento recursivo es una técnica que permite organizar una lista de datos dividiéndola en partes cada vez más pequeñas hasta que sean fáciles de ordenar. Se basa en el principio de divide y vencerás, utilizando llamadas a sí mismo para resolver cada subconjunto y luego unirlos en orden.
+
+## Planteamiento del algoritmo recursivo de ordenamiento
+
+- **Algoritmo elegido:** Merge Sort (Ordenamiento por Mezcla).
+- **Conjunto de datos del caso:** Un vector (`int[]`) que almacena las distancias en metros desde la ubicación actual del estudiante hacia distintos lugares del campus (Auditorio, Biblioteca, Cafetería y Laboratorio de Redes).
+- **Criterio de ordenamiento:** De menor a mayor distancia, para mostrar primero los ambientes más cercanos al usuario.
+- **Funcionamiento:** Divide el arreglo en dos mitades de forma recursiva y luego las fusiona ordenadamente.
+
+## Descripción paso a paso: división y resultado final
+
+### Fase 1: División del problema (`sort`)
+
+Tomando como ejemplo el arreglo de distancias `arr = {120, 45, 90, 30}`:
+
+- Se comienza con el arreglo completo: `{120, 45, 90, 30}`.
+- Se calcula el punto medio y se divide en dos mitades: `{120, 45}` y `{90, 30}`.
+- Se vuelve a dividir cada mitad hasta llegar al **caso base** (arreglos de 1 solo elemento): `{120}`, `{45}`, `{90}` y `{30}`.
+- Cuando cada subarreglo tiene un único elemento, se detienen las divisiones porque ya se consideran ordenados.
+
+### Fase 2: Obtención del resultado final (`merge`)
+
+- Se comparan y unen los primeros pares: `{120}` y `{45}` pasan a ser `{45, 120}`.
+- Se comparan y unen los segundos pares: `{90}` y `{30}` pasan a ser `{30, 90}`.
+- Finalmente, se fusionan ambas mitades comparando elemento por elemento (`30 < 45`, `45 < 90`, `90 < 120`).
+- **Resultado final:** `{30, 45, 90, 120}` (Auditorio a 30m, Biblioteca a 45m, Cafetería a 90m y Lab. Redes a 120m).
+
+## ¿Por qué el enfoque recursivo es útil en este contexto?
+
+- **Rapidez y eficiencia:** Mantiene un tiempo de respuesta rápido ($O(n \log n)$) incluso si el campus tiene cientos de aulas o laboratorios registrados.
+- **Ordenamiento estable:** Si dos ambientes del campus están exactamente a la misma distancia, conserva su orden original sin desordenarlos.
+- **Código limpio y modular:** Separa en dos métodos distintos la tarea de dividir (`sort`) y la de unir (`merge`), facilitando su mantenimiento.
+- **Reutilización:** El mismo algoritmo sirve para ordenar los lugares por otros criterios numéricos, como tiempo de caminata o cantidad de asientos disponibles.
+
+## Código en Java (Merge Sort)
+
+```java
+public class MergeSort {
+    // Método principal que llama al ordenamiento recursivo
+    public void sort(int[] arr, int left, int right) {
+        if (left < right) {
+            int mid = (left + right) / 2;
+            sort(arr, left, mid);      // Ordenar primera mitad
+            sort(arr, mid + 1, right); // Ordenar segunda mitad
+            merge(arr, left, mid, right); // Fusionar mitades
+        }
+    }
+
+    // Método para fusionar dos sub-arrays
+    void merge(int[] arr, int left, int mid, int right) {
+        int n1 = mid - left + 1;
+        int n2 = right - mid;
+
+        int[] L = new int[n1];
+        int[] R = new int[n2];
+
+        for (int i = 0; i < n1; ++i) L[i] = arr[left + i];
+        for (int j = 0; j < n2; ++j) R[j] = arr[mid + 1 + j];
+
+        int i = 0, j = 0, k = left;
+        while (i < n1 && j < n2) {
+            if (L[i] <= R[j]) {
+                arr[k] = L[i];
+                i++;
+            } else {
+                arr[k] = R[j];
+                j++;
+            }
+            k++;
+        }
+        while (i < n1) { arr[k] = L[i]; i++; k++; }
+        while (j < n2) { arr[k] = R[j]; j++; k++; }
+    }
+
+    // Prueba aplicada al caso del campus
+    public static void main(String[] args) {
+        // Distancias en metros desde la Puerta Principal:
+        // [Lab. Redes = 120m, Biblioteca = 45m, Cafetería = 90m, Auditorio = 30m]
+        int[] distanciasCampus = {120, 45, 90, 30};
+
+        MergeSort ordenador = new MergeSort();
+        ordenador.sort(distanciasCampus, 0, distanciasCampus.length - 1);
+
+        System.out.print("Distancias ordenadas (de más cercana a más lejana): ");
+        for (int d : distanciasCampus) {
+            System.out.print(d + "m ");
+        }
+    }
+}
                                                        Actividad 3 
 Modelado del problema mediante grafos 
 
