@@ -207,7 +207,7 @@ El ordenamiento recursivo es una técnica que permite organizar una lista de dat
 ## Planteamiento del algoritmo recursivo de ordenamiento
 
 - **Algoritmo elegido:** Merge Sort (Ordenamiento por Mezcla).
-- **Conjunto de datos del caso:** Un vector (`int[]`) que almacena las distancias en metros desde la ubicación actual del estudiante hacia distintos lugares del campus (Auditorio, Biblioteca, Cafetería y Laboratorio de Redes).
+- **Conjunto de datos del caso:** Un vector (`int[]`) que almacena las distancias en metros desde la ubicación actual del estudiante hacia distintos lugares del campus.
 - **Criterio de ordenamiento:** De menor a mayor distancia, para mostrar primero los ambientes más cercanos al usuario.
 - **Funcionamiento:** Divide el arreglo en dos mitades de forma recursiva y luego las fusiona ordenadamente.
 
@@ -227,7 +227,7 @@ Tomando como ejemplo el arreglo de distancias `arr = {120, 45, 90, 30}`:
 - Se comparan y unen los primeros pares: `{120}` y `{45}` pasan a ser `{45, 120}`.
 - Se comparan y unen los segundos pares: `{90}` y `{30}` pasan a ser `{30, 90}`.
 - Finalmente, se fusionan ambas mitades comparando elemento por elemento (`30 < 45`, `45 < 90`, `90 < 120`).
-- **Resultado final:** `{30, 45, 90, 120}` (Auditorio a 30m, Biblioteca a 45m, Cafetería a 90m y Lab. Redes a 120m).
+- **Resultado final:** `{30, 45, 90, 120}` .
 
 ## ¿Por qué el enfoque recursivo es útil en este contexto?
 
@@ -276,10 +276,9 @@ public class MergeSort {
         while (j < n2) { arr[k] = R[j]; j++; k++; }
     }
 
-    // Prueba aplicada al caso del campus
+    // Prueba aplicada al caso 
     public static void main(String[] args) {
-        // Distancias en metros desde la Puerta Principal:
-        // [Lab. Redes = 120m, Biblioteca = 45m, Cafetería = 90m, Auditorio = 30m]
+       
         int[] distanciasCampus = {120, 45, 90, 30};
 
         MergeSort ordenador = new MergeSort();
