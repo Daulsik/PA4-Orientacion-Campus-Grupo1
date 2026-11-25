@@ -313,7 +313,7 @@ Representación del problema mediante un grafo
 
 Por ejemplo, los nodos serían A (casa), B (parque), C (hospital), D (biblioteca) y E (universidad). Las conexiones representarían los caminos disponibles entre ellos.
 
-Situaciones en las que conviene utilizar DFS y BF
+Situaciones en las que conviene utilizar DFS y BFS
 
 DFS (Búsqueda en profundidad)
 
