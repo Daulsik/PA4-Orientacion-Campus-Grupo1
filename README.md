@@ -373,7 +373,7 @@ Argumentación final
 - **Recomendación para el módulo del campus:** Proponemos combinar ordenamiento recursivo para organizar información con una estrategia de búsqueda orientada a la meta (**$A^*$** con heurística admisible o **BFS** según el criterio del grafo) para seleccionar rutas convenientes.
 - **Relación con aplicaciones básicas de IA:** Vinculamos el módulo de orientación con sistemas de navegación/rutas, recomendadores y redes de relaciones basadas en grafos, apoyándonos en el análisis algorítmico y el uso crítico de IA.
 
-# Link del Video: ()
+# Link del Video: (https://youtu.be/q4Ehaun4e1I)
 
 
                    
